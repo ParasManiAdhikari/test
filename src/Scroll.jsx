@@ -53,9 +53,9 @@ function Scroll() {
                 <h2>then real is simply electrical signals interpreted by your brain.</h2>
             </section>
 
-            <section className='inner-element mt-2'>
+            <div className='mt-2 text-2xl text-white mb-10'>
                 <h1>END</h1>
-            </section>
+            </div>
         </div>
     )
 }

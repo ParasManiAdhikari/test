@@ -14,12 +14,12 @@ function CopyToClipboard(props) {
   };
 
   return (
-    <div className="p-4 bg-zinc-800 rounded-md">
+    <div className="p-4 bg-pgreen-700 rounded-md">
       <div className="flex justify-between items-center">
         <p className="text-lg text-slate-50">{textToCopy}</p>
         <button
           onClick={copyToClipboard}
-          className="px-4 py-2 bg-blue-800 text-white rounded-md ml-4 hover:bg-blue-950 focus:outline-none focus:ring focus:ring-blue-500"
+          className="px-4 py-2 bg-pgreen-800 text-white rounded-md ml-4 hover:bg-green-950 focus:outline-none focus:ring focus:ring-green-500"
         >
           {copied ? 'Copied!' : 'Copy'}
         </button>
