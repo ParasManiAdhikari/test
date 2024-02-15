@@ -7,7 +7,7 @@ import Scroll from "./Scroll";
 import Gallery from "./Gallery";
 
 const App = () => {
-  const homeButtonClass = "hover:underline fixed top-2 left-1/2 -translate-x-1/2 bg-zinc-800 text-green-100 py-2 px-4 rounded";
+  const homeButtonClass = "hover:underline fixed top-2 left-1/2 -translate-x-1/2 bg-pgreen-700 text-green-100 py-2 px-4 rounded";
   const [view, setView] = useState("homepage");
 
   const toggleView = (v) => {
@@ -36,7 +36,7 @@ const App = () => {
           <Middle></Middle>
 
           <footer className="bg-pgreen-700 shadow-md p-4 mt-8 rounded-lg max-w-lg border border-lime-700">
-            <ul className="flex space-x-40">
+            <ul className="flex space-x-20">
               <li>
                 <button className="hover:underline" onClick={() => toggleView("email")}>Email</button>
               </li>

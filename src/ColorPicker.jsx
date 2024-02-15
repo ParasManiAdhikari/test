@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 function CP() {
-  const [color, setColor] = useState("black")
+  const [color, setColor] = useState("#40493c")
 
   function handleColorChange(event) {
     setColor(event.target.value);
