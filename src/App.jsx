@@ -7,7 +7,7 @@ import Scroll from "./Scroll";
 import Gallery from "./Gallery";
 
 const App = () => {
-  const homeButtonClass = "hover:underline fixed top-2 left-1/2 -translate-x-1/2 bg-pgreen-700 text-green-100 py-2 px-4 rounded";
+  const homeButtonClass = "hover:underline fixed top-2 left-1/2 -translate-x-1/2 bg-pgreen-700 text-lime-100 py-2 px-4 rounded";
   const [view, setView] = useState("homepage");
 
   const toggleView = (v) => {
@@ -17,9 +17,9 @@ const App = () => {
   return (
     <div>
       {view === "homepage" ? (
-        <div className="min-h-screen text-white flex flex-col justify-center items-center">
+        <div className="min-h-screen text-lime-100 flex flex-col justify-center items-center">
 
-          <header className="bg-pgreen-700 shadow-md p-4 mb-8 rounded-lg max-w-lg border border-lime-700">
+          <header className="bg-pgreen-700 shadow-md p-4 mb-8 rounded-lg max-w-lg border border-lime-50">
             <ul className="flex space-x-20">
               <li>
                 <button onClick={() => toggleView("cp")} className="hover:underline">Color Picker</button>
@@ -35,7 +35,7 @@ const App = () => {
 
           <Middle></Middle>
 
-          <footer className="bg-pgreen-700 shadow-md p-4 mt-8 rounded-lg max-w-lg border border-lime-700">
+          <footer className="bg-pgreen-700 shadow-md p-4 mt-8 rounded-lg max-w-lg border border-lime-50">
             <ul className="flex space-x-20">
               <li>
                 <button className="hover:underline" onClick={() => toggleView("email")}>Email</button>
@@ -72,7 +72,7 @@ const App = () => {
           <button onClick={() => toggleView("homepage")} className={`${homeButtonClass}`}>Home</button>
         </>
       ) : (
-        <div className="min-h-screen flex flex-col justify-center items-center text-green-100">
+        <div className="min-h-screen flex flex-col justify-center items-center text-lime-100">
           <CopyToClipboard text="parasad612@gmail.com" />
           <button onClick={() => toggleView("homepage")} className={`${homeButtonClass}`}>Home</button>
         </div>
