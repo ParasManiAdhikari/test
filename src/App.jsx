@@ -19,7 +19,7 @@ const App = () => {
       {view === "homepage" ? (
         <div className="min-h-screen text-lime-100 flex flex-col justify-center items-center">
 
-          <header className="bg-pgreen-700 shadow-md p-4 mb-8 rounded-lg max-w-lg border border-lime-50">
+          <header className="bg-pgreen-700 shadow-md p-4 mb-8 rounded-lg max-w-lg border border-pgreen-800">
             <ul className="flex space-x-20">
               <li>
                 <button onClick={() => toggleView("cp")} className="hover:underline">Color Picker</button>
@@ -35,7 +35,7 @@ const App = () => {
 
           <Middle></Middle>
 
-          <footer className="bg-pgreen-700 shadow-md p-4 mt-8 rounded-lg max-w-lg border border-lime-50">
+          <footer className="bg-pgreen-700 shadow-md p-4 mt-8 rounded-lg max-w-lg border border-pgreen-800">
             <ul className="flex space-x-20">
               <li>
                 <button className="hover:underline" onClick={() => toggleView("email")}>Email</button>
@@ -46,7 +46,7 @@ const App = () => {
                   className="text-pastel-green hover:underline">LinkedIn</a>
               </li>
               <li>
-                <a href="https://github.com/parasxdhikari"
+                <a href="https://github.com/ParasManiAdhikari"
                   className="text-pastel-green hover:underline">GitHub</a>
               </li>
             </ul>
