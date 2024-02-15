@@ -9,7 +9,7 @@ function Middle() {
         <h2 className="text-lg font-bold text-lime-100 mb-2">About Me</h2>
         <p className="text-slate-300">
           I'm a Software Developer with a keen interest in creating
-          user-friendly programs and applications.
+          user-friendly applications.
         </p>
       </div>
       <div className="p-6 rounded-md border border-lime-100">
