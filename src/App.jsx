@@ -19,8 +19,8 @@ const App = () => {
       {view === "homepage" ? (
         <div className="min-h-screen text-lime-100 flex flex-col justify-center items-center">
 
-          <header className="bg-pgreen-700 shadow-md p-4 mb-8 rounded-lg max-w-lg border border-pgreen-800">
-            <ul className="flex space-x-20">
+          <header className="bg-pgreen-700 shadow-md p-4 mb-8 rounded-lg min-w-[512px] border border-pgreen-800">
+            <ul className="flex space-x-20 justify-between">
               <li>
                 <button onClick={() => toggleView("cp")} className="hover:underline">Color Picker</button>
               </li>
@@ -35,8 +35,8 @@ const App = () => {
 
           <Middle></Middle>
 
-          <footer className="bg-pgreen-700 shadow-md p-4 mt-8 rounded-lg max-w-lg border border-pgreen-800">
-            <ul className="flex space-x-20">
+          <footer className="bg-pgreen-700 shadow-md p-4 mt-8 rounded-lg min-w-[512px] border border-pgreen-800">
+            <ul className="flex space-x-20 justify-between">
               <li>
                 <button className="hover:underline" onClick={() => toggleView("email")}>Email</button>
               </li>
